@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Developer Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family:"Times New Roman", Times, serif;
+      background: #0f172a;
+      color: #f8fafc;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #1e293b;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #facc15;
+    }
+    .navbar .menu {
+      display: flex;
+      gap: 20px;
+    }
+    .navbar .menu a {
+      color: #f8fafc;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .navbar .menu a:hover {
+      color: #facc15;
+    }
+    header {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p.subheadline {
+      font-size: 1.25rem;
+      color: #94a3b8;
+      margin-bottom: 1.5rem;
+    }
+    .cta-btn {
+      padding: 12px 24px;
+      background: #facc15;
+      color: black;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .motto {
+      font-size: 1.125rem;
+      color: #cbd5e1;
+      margin-top: 2rem;
+      line-height: 1.6;
+      font-style: italic;
+      animation: fadeInUp 1.5s ease-out;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    section.features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 40px 20px;
+      background: #1e293b;
+    }
+    .feature {
+      max-width: 300px;
+      background: #334155;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .feature h3 {
+      margin-top: 0;
+      color: #e0e7ff;
+    }
+    section.code-sample {
+      background: #0f172a;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    section.code-sample h2 {
+      margin-bottom: 20px;
+    }
+    .code-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+    pre {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: left;
+      overflow-x: auto;
+      max-width: 700px;
+      width: 100%;
+    }
+    footer {
+      padding: 30px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #94a3b8;
+      background: #1e293b;
+    }
+    a {
+      color: #facc15;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">JavaDev</div>
+    <div class="menu">
+      <a href="#features">Features</a>
+      <a href="#code-example">Example</a>
+      <a href="#docs">Docs</a>
+      <a href="#github">GitHub</a>
+    </div>
+  </div>
+
+  <header>
+    <h1>Master Java. Build Real Projects.</h1>
+    <p class="subheadline">Level up your Java skills with hands-on learning and real-world examples.</p>
+    <button class="cta-btn">Start Coding</button>
+    <div class="motto">
+      <p>Code with passion. Debug with patience. Deploy with pride.</p>
+    </div>
+  </header>
+
+  <section class="features" id="features">
+    <h2 style="width: 100%; text-align: center; color: #facc15; margin-bottom: 30px;">Essential Skills for Every Java Developer</h2>
+    <div class="feature">
+      <h3>Object-Oriented Programming</h3>
+      <p>Understand the pillars of OOP: encapsulation, inheritance, abstraction, and polymorphism.</p>
+    </div>
+    <div class="feature">
+      <h3>Java Fundamentals</h3>
+      <p>Master syntax, loops, classes, and exception handling to build strong foundations.</p>
+    </div>
+    <div class="feature">
+      <h3>Build & Deploy</h3>
+      <p>Use tools like Maven and Git to build and share your Java applications with the world.</p>
+    </div>
+    <div class="feature">
+      <h3>Spring Framework</h3>
+      <p>Build scalable backend applications using Spring Boot and related technologies.</p>
+    </div>
+    <div class="feature">
+      <h3>REST APIs</h3>
+      <p>Design and implement RESTful services for frontend-backend communication.</p>
+    </div>
+    <div class="feature">
+      <h3>Unit Testing</h3>
+      <p>Write reliable tests with JUnit and Mockito to ensure code quality and stability.</p>
+    </div>
+    <div class="feature">
+      <h3>Multithreading & Concurrency</h3>
+      <p>Develop efficient, scalable applications by mastering Java's threading model and concurrency tools.</p>
+    </div>
+    <div class="feature">
+      <h3>Java Design Patterns</h3>
+      <p>Leverage proven design solutions to common programming challenges in real-world software projects.</p>
+    </div>
+    <div class="feature">
+      <h3>Database Integration</h3>
+      <p>Work with SQL and NoSQL databases using JDBC, JPA, and Hibernate to manage data effectively.</p>
+    </div>
+  </section>
+  <section id="docs" style="background: #1e293b; padding: 60px 20px; text-align: center;">
+    <h2 style="color: #facc15; margin-bottom: 20px;">Java Documentation</h2>
+    <p style="color: #cbd5e1; max-width: 600px; margin: 0 auto 30px;">
+      Explore the official Java documentation provided by Oracle. It's your go-to resource for in-depth technical details, class references, and developer guides.
+    </p>
+    <a href="https://docs.oracle.com/en/java/" target="_blank" style="display: inline-block; padding: 12px 24px; background: #facc15; color: black; border-radius: 8px; text-decoration: none; font-weight: bold;">
+      Visit Oracle Java Docs →
+    </a>
+  </section>
+  <section id="books" style="background: #0f172a; padding: 60px 20px; text-align: center;">
+    <h2 style="color: #facc15; margin-bottom: 20px;">Recommended Java Books</h2>
+    <p style="color: #cbd5e1; max-width: 600px; margin: 0 auto 30px;">
+      Strengthen your Java expertise with these top books—ideal for beginners to advanced developers.
+    </p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1000px; margin: 0 auto;">
+      <div style="max-width: 300px; background: #1e293b; border-radius: 10px; padding: 20px; text-align: left;">
+        <h3 style="color: #e0e7ff;">Effective Java</h3>
+        <p style="color: #cbd5e1;">by Joshua Bloch<br><em>Advanced programming best practices in Java, including design, patterns, and performance tips.</em></p>
+      </div>
+      <div style="max-width: 300px; background: #1e293b; border-radius: 10px; padding: 20px; text-align: left;">
+        <h3 style="color: #e0e7ff;">Head First Java</h3>
+        <p style="color: #cbd5e1;">by Kathy Sierra & Bert Bates<br><em>A friendly, beginner-focused introduction to Java concepts with engaging visuals.</em></p>
+      </div>
+      <div style="max-width: 300px; background: #1e293b; border-radius: 10px; padding: 20px; text-align: left;">
+        <h3 style="color: #e0e7ff;">Java: The Complete Reference</h3>
+        <p style="color: #cbd5e1;">by Herbert Schildt<br><em>An all-in-one Java guide, perfect for in-depth learning of core and advanced topics.</em></p>
+      </div>
+      <div style="max-width: 300px; background: #1e293b; border-radius: 10px; padding: 20px; text-align: left;">
+        <h3 style="color: #e0e7ff;">Clean Code</h3>
+        <p style="color: #cbd5e1;">by Robert C. Martin<br><em>Focuses on writing readable, maintainable Java code — a must for professional developers.</em></p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="code-sample" id="code-example">
+    <h2>Java Hello World</h2>
+    <div class="code-wrapper">
+      <pre><code>// Java Example
+public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hello, Java Developer!");
+  }
+}</code></pre>
+    </div>
+    <p><a href="#">Try this yourself →</a></p>
+  </section>
+  
+
+  <footer>
+    © 2025 JavaDev. Empowering Java learners. Explore on <a href="#" id="github">GitHub</a> | Read our <a href="#docs" id="docs">Docs</a> | Join the <a href="#">Community</a>
+  </footer>
+</body>
+</html>
